@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 35px;
+  color: rgba(50, 49, 49, 0.689);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bubble {
+  background: rgba(255, 68, 0, 0.683);
+  border-radius: 300px;
+  filter: hue-rotate(0deg);
+  position: absolute;
+  animation: anim 8s forwards;
+  opacity: 0;
+}
+@keyframes anim {
+  to {
+    filter: hue-rotate(720deg);
+    top: -272px;
+    left: var(---left);
+    opacity: 1;
+  }
+}
